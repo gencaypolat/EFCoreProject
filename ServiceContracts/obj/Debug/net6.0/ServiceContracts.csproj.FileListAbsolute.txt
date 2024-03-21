@@ -1,0 +1,15 @@
+C:\Users\genca\source\repos\CRUDProjectAspNet\ServiceContracts\bin\Debug\net6.0\ServiceContracts.deps.json
+C:\Users\genca\source\repos\CRUDProjectAspNet\ServiceContracts\bin\Debug\net6.0\ServiceContracts.dll
+C:\Users\genca\source\repos\CRUDProjectAspNet\ServiceContracts\bin\Debug\net6.0\ServiceContracts.pdb
+C:\Users\genca\source\repos\CRUDProjectAspNet\ServiceContracts\bin\Debug\net6.0\Entities.dll
+C:\Users\genca\source\repos\CRUDProjectAspNet\ServiceContracts\bin\Debug\net6.0\Entities.pdb
+C:\Users\genca\source\repos\CRUDProjectAspNet\ServiceContracts\obj\Debug\net6.0\ServiceContracts.csproj.AssemblyReference.cache
+C:\Users\genca\source\repos\CRUDProjectAspNet\ServiceContracts\obj\Debug\net6.0\ServiceContracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\genca\source\repos\CRUDProjectAspNet\ServiceContracts\obj\Debug\net6.0\ServiceContracts.AssemblyInfoInputs.cache
+C:\Users\genca\source\repos\CRUDProjectAspNet\ServiceContracts\obj\Debug\net6.0\ServiceContracts.AssemblyInfo.cs
+C:\Users\genca\source\repos\CRUDProjectAspNet\ServiceContracts\obj\Debug\net6.0\ServiceContracts.csproj.CoreCompileInputs.cache
+C:\Users\genca\source\repos\CRUDProjectAspNet\ServiceContracts\obj\Debug\net6.0\ServiceC.04662A29.Up2Date
+C:\Users\genca\source\repos\CRUDProjectAspNet\ServiceContracts\obj\Debug\net6.0\ServiceContracts.dll
+C:\Users\genca\source\repos\CRUDProjectAspNet\ServiceContracts\obj\Debug\net6.0\refint\ServiceContracts.dll
+C:\Users\genca\source\repos\CRUDProjectAspNet\ServiceContracts\obj\Debug\net6.0\ServiceContracts.pdb
+C:\Users\genca\source\repos\CRUDProjectAspNet\ServiceContracts\obj\Debug\net6.0\ref\ServiceContracts.dll
