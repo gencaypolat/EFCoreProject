@@ -9,6 +9,9 @@ namespace Entities
 {
     public class PersonsDbContext : DbContext
     {
+        public PersonsDbContext(DbContextOptions options): base(options)
+        {
+        }
         public DbSet<Person> Persons { get; set;}
         public DbSet<Country> Countries {  get; set;}
 
@@ -16,6 +19,7 @@ namespace Entities
         {
             base.OnModelCreating(modelBuilder);
 
+            // Mapping DbSets to tables
             modelBuilder.Entity<Country>().ToTable("Countries");
             modelBuilder.Entity<Person>().ToTable("Persons");
 
