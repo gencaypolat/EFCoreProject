@@ -20,11 +20,29 @@ namespace Entities
             modelBuilder.Entity<Person>().ToTable("Persons");
 
             // Seed Data addition to Countries Table
-            modelBuilder.Entity<Country>().HasData(new Country
+            //modelBuilder.Entity<Country>().HasData(new Country
+            //{
+            //    CountryID = new Guid(),
+            //    CountryName = "Turkey"
+            //});
+
+            // Seed to Countries
+            string countriesJson = System.IO.File.ReadAllText("countries.json");
+            List<Country> countries = System.Text.Json.JsonSerializer.Deserialize<List<Country>>(countriesJson);
+
+            foreach (Country country in countries)
             {
-                CountryID = new Guid(),
-                CountryName = "Turkey"
-            });
+                modelBuilder.Entity<Country>().HasData(country);
+            };
+
+            // Seed to Persons
+            string personsJson = System.IO.File.ReadAllText("persons.json");
+            List<Person> persons = System.Text.Json.JsonSerializer.Deserialize<List<Person>>(personsJson);
+
+            foreach (Person person in persons)
+            {
+                modelBuilder.Entity<Person>().HasData(person);                
+            }
         }
     }
 }
