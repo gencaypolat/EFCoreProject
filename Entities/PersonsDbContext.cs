@@ -18,6 +18,13 @@ namespace Entities
 
             modelBuilder.Entity<Country>().ToTable("Countries");
             modelBuilder.Entity<Person>().ToTable("Persons");
+
+            // Seed Data addition to Countries Table
+            modelBuilder.Entity<Country>().HasData(new Country
+            {
+                CountryID = new Guid(),
+                CountryName = "Turkey"
+            });
         }
     }
 }
