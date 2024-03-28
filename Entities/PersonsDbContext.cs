@@ -23,7 +23,7 @@ namespace Entities
             // Mapping DbSets to tables
             modelBuilder.Entity<Country>().ToTable("Countries");
             modelBuilder.Entity<Person>().ToTable("Persons");
-
+            
             // Seed Data addition to Countries Table
             //modelBuilder.Entity<Country>().HasData(new Country
             //{
@@ -48,11 +48,23 @@ namespace Entities
             {
                 modelBuilder.Entity<Person>().HasData(person);                
             }
+
+            //Fluent API
+            modelBuilder.Entity<Person>().Property(temp => temp.TIN)
+                .HasColumnName("TaxIdentificationNumber")
+                .HasColumnType("varchar(10)")
+                .HasDefaultValue("ABC12345");
+
+            //modelBuilder.Entity<Person>()
+            //    .HasIndex(temp => temp.TIN).IsUnique();
+
+            modelBuilder.Entity<Person>()
+                .HasCheckConstraint("CHK_TIN", "len([TaxIdentificationNumber]) = 10");
         }
 
         public List<Person> sp_GetAllPersons()
         {
-            return Persons.FromSqlRaw("EXECUTE [dbo].[GetAllPersons]").ToList();
+             return Persons.FromSqlRaw("EXECUTE [dbo].[GetAllPersons]").ToList();
         }
 
         public int sp_InsertPerson(Person person)
