@@ -58,6 +58,8 @@ namespace Services
         public List<PersonResponse> GetAllPersons()
          {
             // SELECT * from Persons
+            var persons = _db.Persons.ToList();
+
             return _db.Persons.ToList()
                 .Select(temp => ConvertPersonToPersonResponse(temp)).ToList();
 
